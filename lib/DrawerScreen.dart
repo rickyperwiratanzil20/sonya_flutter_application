@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors, file_names
 
 import 'package:flutter/material.dart';
 
@@ -24,7 +24,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                     borderRadius: BorderRadius.circular(200),
                     child: Image(
                       fit: BoxFit.cover,
-                      image: AssetImage('assets/foto.jpeg'),
+                      image: AssetImage('assets/Sonya.jpeg'),
                     ),
                   ),
                 ),
