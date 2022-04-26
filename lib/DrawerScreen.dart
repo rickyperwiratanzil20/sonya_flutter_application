@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, use_key_in_widget_constructors, file_names
 
 import 'package:flutter/material.dart';
+import 'package:sonya_flutter_application/LoginPage.dart';
 
 class DrawerScreen extends StatefulWidget {
   @override
@@ -37,6 +38,31 @@ class _DrawerScreenState extends State<DrawerScreen> {
                       color: Colors.white,
                       fontSize: 22,
                       fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                TextButton(
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            const LoginPage(title: 'Login Page'),
+                      ),
+                    );
+                  },
+                  child: const Text(
+                    'LOGIN',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 22,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
                 ),
               ],
             ),
