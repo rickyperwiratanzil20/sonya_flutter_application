@@ -118,10 +118,16 @@ class _LibraryHomeState extends State<LibraryHome> {
           const SizedBox(
             height: 20,
           ),
-          TextField(
-            onChanged: (value) => _runFilter(value),
-            decoration: const InputDecoration(
-                labelText: 'Search', suffixIcon: Icon(Icons.search)),
+          Container(
+            color: Colors.white,
+            child: TextField(
+              onChanged: (value) => _runFilter(value),
+              decoration: const InputDecoration(
+                  labelText: 'Search', suffixIcon: Icon(Icons.search)),
+            ),
+          ),
+          Container(
+            color: Colors.white,
           ),
           const SizedBox(
             height: 20,
