@@ -54,7 +54,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                     );
                   },
                   child: const Text(
-                    'LOGIN',
+                    'LOGOUT',
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 22,
